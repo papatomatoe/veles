@@ -1,0 +1,1 @@
+{"version":3,"sources":["globals.scss","blocks/page-header.scss"],"names":[],"mappings":"AAAA,I,CACE,U,CACA,mB,CAAA,mB,CAAA,Y,CCFF,Y,CACE,qB","file":"style.min.css","sourcesContent":["body {\n  color: teal;\n  display: flex;\n}\n",".page-header {\n  background-color: gold;\n}\n"]}
