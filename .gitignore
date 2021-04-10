@@ -11,3 +11,4 @@ npm-debug.*
 build/
 Thumbs.db
 .gulp/
+tempImages/
