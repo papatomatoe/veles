@@ -1,6 +1,31 @@
 body {
-  // color: teal;
-  // display: flex;
+  position: relative;
+  min-width: $mobile;
+  font-family: $fnt_main;
+  background-color: $clr_main;
+  color: $clr_second;
+}
 
-  font-family: 'Raleway', Arial, sans-serif;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  @include center(290px);
 }

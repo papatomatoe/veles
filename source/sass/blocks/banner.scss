@@ -1,1 +1,9 @@
-// banner
+.banner {
+  padding-top: 1px;
+  min-height: 505px;
+  background-image: url("../images/banner_1-mob.jpg");
+}
+
+.banner__img {
+  display: none;
+}

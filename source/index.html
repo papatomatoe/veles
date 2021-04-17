@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Veles. Выгрузка вагонов, аренда земли, крановых площадок, ответственное хранение">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
@@ -30,37 +30,40 @@
 
 <body>
   <header class="page-header">
-    <nav class="page-header__nav">
-      <a class="logo page-header__logo" href="#">
-        <img class="logo__img page-header__img" src="images/velos-logo.svg" width="91" height="37"
-          alt="Логотип фирмы &quot;Veles&quot;">
-      </a>
-      <ul class="main-menu page-header__main-menu">
-        <li class="main-menu__item main-menu__item page-header__item">
-          <a class="main-menu__link main-menu__link page-header__link" href="#">Земля</a>
-        </li>
-        <li class="main-menu__item page-header__item">
-          <a class="main-menu__link page-header__link" href="#">Крановые площадки</a>
-        </li>
-        <li class="main-menu__item page-header__item">
-          <a class="main-menu__link page-header__link" href="#">Выгрузка вагонов</a>
-        </li>
-        <li class="main-menu__item page-header__item">
-          <a class="main-menu__link page-header__link" href="#">Фасовка</a>
-        </li>
-        <li class="main-menu__item page-header__item">
-          <a class="main-menu__link page-header__link" href="#">Щебень</a>
-        </li>
-      </ul>
-      <ul class="contact-menu page-header__contact-menu">
-        <li class="contact-menu__item page-header__item">
-          <a class="contact-menu__link page-header__link" href="tel:89276784514">+7 (927) 678-45-14</a>
-        </li>
-        <li class="contact-menu__item page-header__item">
-          <p class="contact-menu__address page-header__address">г. Казань, Складская 20</p>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="page-header__nav">
+        <a class="logo page-header__logo" href="#">
+          <svg width="91" height="37" class="logo__img page-header__img">
+            <use xlink:href="./images/sprite.svg#velos-logo"></use>
+          </svg>
+        </a>
+        <ul class="main-menu page-header__main-menu">
+          <li class="main-menu__item main-menu__item page-header__item">
+            <a class="main-menu__link main-menu__link page-header__link" href="#">Земля</a>
+          </li>
+          <li class="main-menu__item page-header__item">
+            <a class="main-menu__link page-header__link" href="#">Крановые площадки</a>
+          </li>
+          <li class="main-menu__item page-header__item">
+            <a class="main-menu__link page-header__link" href="#">Выгрузка вагонов</a>
+          </li>
+          <li class="main-menu__item page-header__item">
+            <a class="main-menu__link page-header__link" href="#">Фасовка</a>
+          </li>
+          <li class="main-menu__item page-header__item">
+            <a class="main-menu__link page-header__link" href="#">Щебень</a>
+          </li>
+        </ul>
+        <ul class="contact-menu page-header__contact-menu">
+          <li class="contact-menu__item page-header__item">
+            <a class="contact-menu__link page-header__link" href="tel:89276784514">+7 (927) 678-45-14</a>
+          </li>
+          <li class="contact-menu__item page-header__item">
+            <p class="contact-menu__address page-header__address">г. Казань, Складская 20</p>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="content">
     <h1 class="visually-hidden">Сайт компании "Veles"</h1>
@@ -70,8 +73,8 @@
       <button class="banner__btn" type="button">Заказать</button>
       <picture>
         <source media="(min-width: 768px)" srcset="images/banner_1-desk.jpg, mages/banner_1-desk@2x.jpg 2x" />
-        <img src="images/banner_1-mob.jpg" srcset="images/banner_1-mob@2x.jpg 2x" alt="выгрузка вагонов" width="820"
-          height="505" />
+        <img class="banner__img" src="images/banner_1-mob.jpg" srcset="images/banner_1-mob@2x.jpg 2x"
+          alt="выгрузка вагонов" width="820" height="505" />
       </picture>
       <div class="banner__controls">
         <button class="banner__arrow" type="button" aria-label="previous">⟵</button>
