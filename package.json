@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "start": "gulp start",
+    "dev": "gulp start",
     "images": "gulp images",
     "build": "gulp build"
   },
