@@ -1,1 +1,48 @@
-// features
+.features {
+  padding-top: 60px;
+}
+
+.features__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: $clr_second;
+}
+
+.features__list {
+  @include no-list;
+
+  padding-left: 9px;
+  counter-reset: count;
+}
+
+.features__item {
+  position: relative;
+  padding-left: 91px;
+  min-height: 51px;
+  margin-bottom: 35px;
+  counter-increment: count;
+
+  &::before {
+    position: absolute;
+    content: counter(count);
+    top: 0;
+    left: 0;
+    width: 51px;
+    height: 51px;
+    background-color: $clr_accent;
+  }
+}
+
+.features__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #48494d;
+  margin: 0;
+}

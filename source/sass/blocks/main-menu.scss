@@ -3,3 +3,17 @@
 
   display: none;
 }
+
+.main-menu--open {
+  display: block;
+}
+
+.main-menu__link {
+  color: $clr_main;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}

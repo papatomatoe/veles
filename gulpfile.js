@@ -81,7 +81,7 @@ const copy = () => {
     .src("source/tempImages/*.{jpg,png,webp,svg}")
     .pipe(gulp.dest("build/images"));
 
-  gulp.src("source/icons/*").pipe(gulp.dest("build/icons"));
+  gulp.src("source/icons/*").pipe(gulp.dest("build/"));
 
   return gulp.src("source/*.html").pipe(gulp.dest("build/"));
 };
