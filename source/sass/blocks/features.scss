@@ -11,9 +11,17 @@
   text-align: center;
   letter-spacing: -0.2px;
   color: $clr_second;
+  margin-bottom: 29px;
 }
 
 .features__list {
+  /* NOTE: Эти свойства спрятали картинки */
+
+  position: relative;
+  z-index: -1;
+
+  /* ------------------------------------- */
+
   @include no-list;
 
   padding-left: 9px;
@@ -29,12 +37,19 @@
 
   &::before {
     position: absolute;
-    content: counter(count);
+    content: "0" counter(count);
     top: 0;
     left: 0;
     width: 51px;
     height: 51px;
     background-color: $clr_accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 3px;
   }
 }
 

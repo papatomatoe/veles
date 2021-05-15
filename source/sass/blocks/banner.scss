@@ -66,3 +66,37 @@
   color: $clr_main;
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .banner__text {
+    width: 615px;
+    font-size: 27px;
+    line-height: 1.7;
+  }
+
+  .banner__container {
+    padding-top: 325px;
+  }
+
+  .banner__btn {
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .banner__controls {
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
+
+  .banner__arrow {
+    font-size: 32px;
+    width: 80px;
+  }
+
+  .banner__pagination {
+    font-size: 24px;
+    width: 100px;
+    margin: 0;
+  }
+}

@@ -11,12 +11,19 @@
 }
 
 .page-header__nav {
+  position: fixed;
+  width: 290px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+.page-header__logo {
+  z-index: 100;
+}
+
 .page-header__toggle {
+  z-index: 100;
   margin-top: 6px;
   position: relative;
   width: 24px;
@@ -64,8 +71,14 @@
 }
 
 .page-header__main-menu {
+  position: fixed;
   width: 100%;
-  margin-top: 104px;
+  background-color: $clr_second;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 176px 0 10px;
 }
 
 .page-header__item {

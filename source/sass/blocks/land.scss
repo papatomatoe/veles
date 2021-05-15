@@ -1,47 +1,33 @@
-$colorStop: 100px;
-
-.warehouse {
-  padding-top: 59px;
-  padding-bottom: 33px;
-  background-color: $clr_second;
-  background-image: linear-gradient(
-    to bottom,
-    $clr_main 0%,
-    $clr_main $colorStop,
-    $clr_second $colorStop,
-    $clr_second 100%
-  );
+.land {
+  padding-top: 50px;
 }
 
-.warehouse__title {
-  color: $clr_main;
+.land__title {
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   line-height: 1;
   text-align: center;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin-top: 18px;
 }
 
-.warehouse__text {
-  color: $clr_main;
+.land__text {
   margin-top: 21px;
   font-size: 15px;
   line-height: 1.4;
   text-align: center;
 }
 
-.warehouse__btn {
+.land__btn {
   cursor: pointer;
   width: 100%;
-  border: 1px solid $clr_main;
+  border: none;
   background-color: $clr_second;
   color: $clr_main;
   padding: 22px 10px;
   box-sizing: border-box;
-  margin-top: 27px;
+  margin-top: 22px;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;

@@ -238,86 +238,101 @@
     </section>
     <section class="map">
       <h2 class="map__title">Карта территорий</h2>
-      <svg width="318" height="199" aria-label="Карта территорий">
-        <use xlink:href="images/sprite.svg#map"></use>
-      </svg>
-      <!-- <img class="map__img" src="images/map.svg" width="318" height="199" alt="Карта территорий" /> -->
-    </section>
-    <section class="lend">
-      <h2 class="lend__title">Аренда земли</h2>
-      <p class="lend__text">Предлагаем в аренду открытые площадки для хранения грузов и техники. Площадь базы составляет
-        11,5га. Общая протяженность внутренних ж/д путей позволяет производить погрузо-разгрузочные работы до 60 вагонов
-        в сутки единовременно. На базе работают два маневровых
-        собственных тепловоза. Есть железнодорожные
-        и автомобильные весы, козловой кран, повышенный
-        путь, пандусы для выгрузки крытых вагонов и фур.</p>
-      <button class="lend__btn" type="button">Получить консультацию</button>
       <picture>
-        <source media="(min-width: 768px)" srcset="images/lend-desk.jpg, images/lend-desk@2x.jpg 2x">
-        <img class="lend__img" src="images/lend-mob.jpg" srcset="images/lend-mob@2x.jpg 2x" alt="Аренда земли"
-          width="288" height="250">
-      </picture>
-
+        <source media="(min-width: 768px)" type="image/webp" srcset="images/map-tab.webp, images/map-tab@2x.webp 2x">
+        <source media="(min-width: 768px)" srcset="images/map-tab.png, images/map-tab@2x.png 2x" />
+        <source type="image/webp" srcset="images/map-mob.webp, images/map-mob@2x.webp 2x" />
+        <img class="map__img" src="images/map-mob.png" srcset="images/map-mob@2x.png 2x" width="318" height="199"
+          alt="Карта территорий" />
+    </section>
+    </picture>
+    <section class="land">
+      <div class="container">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/land-desk.jpg, images/land-desk@2x.jpg 2x">
+          <img class="land__img" src="images/land-mob.jpg" srcset="images/land-mob@2x.jpg 2x" alt="Аренда земли"
+            width="288" height="250">
+        </picture>
+        <h2 class="land__title">Аренда земли</h2>
+        <p class="land__text">Предлагаем в аренду открытые площадки для хранения грузов и техники. Площадь базы
+          составляет
+          11,5га. Общая протяженность внутренних ж/д путей позволяет производить погрузо-разгрузочные работы до 60
+          вагонов
+          в сутки единовременно. На базе работают два маневровых
+          собственных тепловоза. Есть железнодорожные
+          и автомобильные весы, козловой кран, повышенный
+          путь, пандусы для выгрузки крытых вагонов и фур.</p>
+        <button class="land__btn" type="button">Получить консультацию</button>
+      </div>
     </section>
     <section class="warehouse">
-      <h2 class="warehouse__title">Аренда складов</h2>
-      <p class="warehouse__text">Предлагаем в аренду крытые и открытые складские и производственные площадки. Склады
-        комплекса оснащены погрузочно-разгрузочной техникой. Открытые складские площадки приспособлены и для хранения
-        негабаритных грузов. Собственный ж.д. подъездной путь. Охраняемая территория, удобные подъездные пути для любых
-        видов транспорта. На закрытой территории базы обеспечивается функционирование всех инженерных сетей.</p>
-      <button class="warehouse__btn" type="button">Получить консультацию</button>
-      <picture>
-        <source media="(min-width: 768px)" srcset="images/warehouse-desk.jpg, images/warehouse-desk@2x.jpg 2x">
-        <img class="warehouse__img" src="images/warehouse-mob.jpg" srcset="images/warehouse-mob@2x.jpg 2x"
-          alt="Аренда складов" width="288" height="250" />
-      </picture>
-
+      <div class="container">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/warehouse-desk.jpg, images/warehouse-desk@2x.jpg 2x">
+          <img class="warehouse__img" src="images/warehouse-mob.jpg" srcset="images/warehouse-mob@2x.jpg 2x"
+            alt="Аренда складов" width="288" height="250" />
+        </picture>
+        <h2 class="warehouse__title">Аренда складов</h2>
+        <p class="warehouse__text">Предлагаем в аренду крытые и открытые складские и производственные площадки. Склады
+          комплекса оснащены погрузочно-разгрузочной техникой. Открытые складские площадки приспособлены и для хранения
+          негабаритных грузов. Собственный ж.д. подъездной путь. Охраняемая территория, удобные подъездные пути для
+          любых
+          видов транспорта. На закрытой территории базы обеспечивается функционирование всех инженерных сетей.</p>
+        <button class="warehouse__btn" type="button">Получить консультацию</button>
+      </div>
     </section>
     <section class="feedback">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <p class="feedback__title">Узнать о ценах, получить консультацию или персональное предложение</p>
-      <form class="feedback__form" action="#" method="POST">
-        <label class="visually-hidden" for="userName">Ваше имя</label>
-        <input class="feedback__input" id="userName" name="user" type="text" placeholder="Имя" minlength="2"
-          maxlength="20" required />
-        <label class="visually-hidden" for="userPhone">Ваш номер телефона</label>
-        <input class="feedback__input" id="userPhone" type="tel" name="phone" placeholder="Телефон" required />
-        <button class="feedback__btn" type="button">Отправить</button>
-      </form>
+      <div class="container">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <p class="feedback__title">Узнать о ценах, получить консультацию или персональное предложение</p>
+        <form class="feedback__form" action="#" method="POST">
+          <label class="visually-hidden" for="userName">Ваше имя</label>
+          <input class="feedback__input" id="userName" name="user" type="text" placeholder="Имя" minlength="2"
+            maxlength="20" required />
+          <label class="visually-hidden" for="userPhone">Ваш номер телефона</label>
+          <input class="feedback__input" id="userPhone" type="tel" name="phone" placeholder="Телефон" required />
+          <button class="feedback__btn" type="button">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__nav">
-      <a class="logo page-footer__logo" href="#" aria-label="Veles logo">
-        <svg width="91" height="37" class="logo__img page-header__img">
-          <use xlink:href="./images/sprite.svg#velos-logo"></use>
-        </svg>
-      </a>
-      <ul class="main-menu page-footer__main-menu">
-        <li class="main-menu__item main-menu__item page-footer__item">
-          <a class="main-menu__link page-footer__link" href="#">Земля</a>
-        </li>
-        <li class="main-menu__item page-footer__item">
-          <a class="main-menu__link page-footer__link" href="#">Крановые площадки</a>
-        </li>
-        <li class="main-menu__item page-footer__item">
-          <a class="main-menu__link page-footer__link" href="#">Выгрузка вагонов</a>
-        </li>
-        <li class="main-menu__item page-footer__item">
-          <a class="main-menu__link page-footer__link" href="#">Фасовка</a>
-        </li>
-        <li class="main-menu__item page-footer__item">
-          <a class="main-menu__link page-footer__link" href="#">Щебень</a>
-        </li>
-      </ul>
-      <ul class="contact-menu page-footer__contact-menu">
-        <li class="contact-menu__item page-footer__item">
-          <a class="contact-menu__link page-footer__link" href="tel:89276784514">+7 (927) 678-45-14</a>
-        </li>
-        <li class="contact-menu__item page-footer__item">
-          <p class="contact-menu__address page-footer__address">г. Казань, Складская 20</p>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="page-footer__nav">
+        <a class="logo page-footer__logo" href="#" aria-label="Veles logo">
+          <svg width="91" height="37" class="logo__img page-header__img">
+            <use xlink:href="./images/sprite.svg#velos-logo"></use>
+          </svg>
+        </a>
+        <ul class="main-menu page-footer__main-menu">
+          <li class="main-menu__item main-menu__item page-footer__item">
+            <a class="main-menu__link page-footer__link" href="#">Земля</a>
+          </li>
+          <li class="main-menu__item page-footer__item">
+            <a class="main-menu__link page-footer__link" href="#">Крановые площадки</a>
+          </li>
+          <li class="main-menu__item page-footer__item">
+            <a class="main-menu__link page-footer__link" href="#">Выгрузка вагонов</a>
+          </li>
+          <li class="main-menu__item page-footer__item">
+            <a class="main-menu__link page-footer__link" href="#">товары сельского хозяйства</a>
+          </li>
+          <li class="main-menu__item page-footer__item">
+            <a class="main-menu__link page-footer__link" href="#">Фасовка</a>
+          </li>
+          <li class="main-menu__item page-footer__item">
+            <a class="main-menu__link page-footer__link" href="#">Щебень</a>
+          </li>
+        </ul>
+        <ul class="contact-menu page-footer__contact-menu">
+          <li class="contact-menu__item page-footer__item">
+            <a class="contact-menu__link page-footer__link" href="tel:89276784514">+7 (927) 678-45-14</a>
+          </li>
+          <li class="contact-menu__item page-footer__item">
+            <p class="contact-menu__address page-footer__address">г. Казань, Складская 20</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>

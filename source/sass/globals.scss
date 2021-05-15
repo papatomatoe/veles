@@ -29,3 +29,9 @@ a {
 .container {
   @include center(290px);
 }
+
+@media (min-width: $tablet) {
+  .container {
+    @include center(688px);
+  }
+}
