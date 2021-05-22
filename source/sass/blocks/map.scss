@@ -14,3 +14,13 @@
   display: block;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet) {
+  .map__title {
+    margin-bottom: 60px;
+  }
+
+  .map__img {
+    width: 600px;
+  }
+}

@@ -73,3 +73,16 @@
     margin: auto;
   }
 }
+
+@media (min-width: $tablet) {
+  .service__list {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .service__item {
+    margin-bottom: 0;
+  }
+}

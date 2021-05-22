@@ -61,3 +61,19 @@
   color: #48494d;
   margin: 0;
 }
+
+@media (min-width: $tablet) {
+  .features__title {
+    margin-bottom: 60px;
+  }
+
+  .features__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .features__item {
+    margin: 0;
+  }
+}
