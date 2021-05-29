@@ -90,3 +90,24 @@
     justify-self: center;
   }
 }
+
+@media (min-width: $tablet) {
+  .land {
+    padding-top: 129px;
+  }
+
+  .land__container {
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: repeat(3, min-content);
+    gap: 10px;
+  }
+
+  .land__title {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-top: 136px;
+    align-self: start;
+    text-align: left;
+    margin-left: 21px;
+  }
+}

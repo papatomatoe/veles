@@ -1,4 +1,5 @@
 $colorStop: 100px;
+$colorStopTablet: 500px;
 
 .warehouse {
   padding-top: 59px;
@@ -49,4 +50,54 @@ $colorStop: 100px;
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet) {
+  .warehouse {
+    position: relative;
+    margin-top: 100px;
+    padding-bottom: 110px;
+    background-image: linear-gradient(
+      to bottom,
+      $clr_second 0%,
+      $clr_second $colorStopTablet,
+      $clr_main $colorStopTablet,
+      $clr_main 100%
+    );
+  }
+
+  .warehouse__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+
+    picture {
+      position: absolute;
+      grid-column: 2 / -1;
+      grid-row: 1 / -1;
+      align-self: end;
+      justify-self: end;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .warehouse__title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .warehouse__text {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .warehouse__btn {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .warehouse__img {
+    width: 350px;
+  }
 }

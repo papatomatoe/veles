@@ -48,7 +48,7 @@
           <li class="main-menu__item page-header__item">
             <a class="main-menu__link page-header__link" href="#">Выгрузка вагонов</a>
           </li>
-          <li class="main-menu__item page-header__item">
+          <li class="main-menu__item page-header__item page-header__item--desk-disable">
             <a class="main-menu__link page-header__link" href="#">товары сельского хозяйства</a>
           </li>
           <li class="main-menu__item page-header__item">
@@ -60,9 +60,15 @@
         </ul>
         <ul class="contact-menu page-header__contact-menu">
           <li class="contact-menu__item page-header__item">
+            <svg class="contact-menu__icon" width="10" height="13">
+              <use xlink:href="images/sprite.svg#phone"></use>
+            </svg>
             <a class="contact-menu__link page-header__link" href="tel:89276784514">+7 (927) 678-45-14</a>
           </li>
           <li class="contact-menu__item page-header__item">
+            <svg class="contact-menu__icon" width="9" height="13">
+              <use xlink:href="images/sprite.svg#map-tag"></use>
+            </svg>
             <p class="contact-menu__address page-header__address">г. Казань, Складская 20</p>
           </li>
         </ul>
@@ -266,7 +272,7 @@
       </div>
     </section>
     <section class="warehouse">
-      <div class="container">
+      <div class="warehouse__container container">
         <picture>
           <source media="(min-width: 768px)" srcset="images/warehouse-desk.jpg, images/warehouse-desk@2x.jpg 2x">
           <img class="warehouse__img" src="images/warehouse-mob.jpg" srcset="images/warehouse-mob@2x.jpg 2x"

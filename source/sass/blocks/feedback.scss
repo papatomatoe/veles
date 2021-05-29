@@ -40,3 +40,21 @@
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet) {
+  .feedback__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feedback__input {
+    width: 32%;
+    margin: 0;
+  }
+
+  .feedback__btn {
+    padding: 19px 10px;
+    width: 32%;
+  }
+}

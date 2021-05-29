@@ -77,3 +77,42 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop) {
+  .features {
+    padding-top: 170px;
+  }
+
+  .features__title {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 85px;
+    margin-left: 40px;
+  }
+
+  .features__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px 120px;
+    width: 1030px;
+    margin-left: 70px;
+  }
+
+  .features__item {
+    margin: 0;
+
+    &::after {
+      position: absolute;
+      content: counter(count);
+      top: -71px;
+      left: 94px;
+      width: 100px;
+      height: 100px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 80px;
+      line-height: 94px;
+      color: rgba(0, 0, 0, 0.03);
+    }
+  }
+}

@@ -35,3 +35,9 @@ a {
     @include center(688px);
   }
 }
+
+@media (min-width: $desktop) {
+  .container {
+    @include center(1170px);
+  }
+}

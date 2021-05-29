@@ -3,3 +3,52 @@
 
   display: none;
 }
+
+@media (min-width: $desktop) {
+  .contact-menu {
+    width: 317px;
+    margin-right: 32px;
+    margin-bottom: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-menu__item {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 20px;
+
+    .contact-menu__icon {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      transform: translateY(-45%);
+    }
+
+    &:nth-of-type(2) .contact-menu__icon {
+      transform: translateY(-76%);
+    }
+  }
+
+  .contact-menu__address {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: #fff;
+  }
+
+  .contact-menu__link {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    color: #fff;
+  }
+}

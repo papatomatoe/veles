@@ -86,3 +86,43 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop) {
+  .service {
+    padding-top: 136px;
+  }
+
+  .service__title {
+    font-size: 30px;
+  }
+
+  .service__list {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 76px;
+    gap: 47px 30px;
+  }
+
+  .service__item {
+    z-index: 1;
+    position: relative;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+
+    &:hover {
+      top: -10px;
+    }
+  }
+
+  .service__link {
+    grid-template-rows: 1fr 109px;
+  }
+
+  .service__text {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 100%;
+    text-align: left;
+    justify-self: start;
+    margin: 0 54px 10px 39px;
+  }
+}

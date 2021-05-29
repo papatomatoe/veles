@@ -8,3 +8,17 @@
   width: $width;
   margin: 0 auto;
 }
+
+@mixin bgGradient(
+  $brakePoint: 200px,
+  $startColor: $clr_second,
+  $endColor: $clr_main
+) {
+  background-image: linear-gradient(
+    to bottom,
+    $startColor 0%,
+    $startColor $brakePoint,
+    $endColor $brakePoint,
+    $endColor 100%
+  );
+}

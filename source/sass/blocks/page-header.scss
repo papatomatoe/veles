@@ -88,6 +88,44 @@
 
 @media (min-width: $tablet) {
   .page-header__nav {
-    width: 680px;
+    width: inherit;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header {
+    height: min-content;
+  }
+
+  .page-header__nav {
+    width: inherit;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__main-menu {
+    position: relative;
+    background-color: transparent;
+    height: min-content;
+    padding: 0;
+    width: 624px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__item {
+    margin: 0;
+  }
+
+  .page-header__item--desk-disable {
+    display: none;
   }
 }

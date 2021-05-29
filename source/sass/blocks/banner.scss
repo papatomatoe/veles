@@ -100,3 +100,55 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop) {
+  .banner {
+    @include bgGradient(600px);
+
+    height: auto;
+    padding-bottom: 122px;
+  }
+
+  .banner__container {
+    padding-top: 203px;
+    height: auto;
+    position: relative;
+  }
+
+  .banner__text {
+    width: 530px;
+  }
+
+  .banner__btn {
+    width: 214px;
+    padding-left: 35px;
+    margin-top: 16px;
+    cursor: pointer;
+  }
+
+  .banner__controls {
+    width: 171px;
+    margin: 69px auto 0 374px;
+  }
+
+  .banner__arrow {
+    font-size: 18px;
+    width: 36px;
+    cursor: pointer;
+  }
+
+  .banner__pagination {
+    font-size: 20px;
+    width: 69px;
+    margin: 0;
+  }
+
+  .banner__img {
+    display: block;
+    position: absolute;
+    bottom: -121px;
+    right: -285px;
+    height: auto;
+    width: 882px;
+  }
+}

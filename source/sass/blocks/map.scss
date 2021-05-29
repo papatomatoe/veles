@@ -24,3 +24,19 @@
     width: 600px;
   }
 }
+
+@media (min-width: $desktop) {
+  .map {
+    padding-top: 121px;
+  }
+
+  .map__title {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-left: 5px;
+  }
+
+  .map__img {
+    width: 1110px;
+  }
+}
