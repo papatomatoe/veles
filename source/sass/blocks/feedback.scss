@@ -58,3 +58,35 @@
     width: 32%;
   }
 }
+
+@media (min-width: $desktop) {
+  .feedback {
+    padding-bottom: 99px;
+  }
+
+  .feedback__title {
+    font-size: 25px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.13em;
+    width: 720px;
+    margin: 12px 274px 30px;
+  }
+
+  .feedback__form {
+    width: 698px;
+    margin: 21px 291px 0;
+  }
+
+  .feedback__input {
+    width: 249px;
+    padding: 27px 17px;
+  }
+
+  .feedback__btn {
+    width: 170px;
+    align-self: stretch;
+    padding-top: 19px;
+    letter-spacing: 1px;
+  }
+}

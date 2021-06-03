@@ -91,23 +91,59 @@
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .land {
     padding-top: 129px;
+    padding-bottom: 90px;
   }
 
   .land__container {
+    position: relative;
     grid-template-columns: 450px 1fr;
     grid-template-rows: repeat(3, min-content);
     gap: 10px;
   }
 
   .land__title {
+    text-align: left;
     font-size: 30px;
     line-height: 1.2;
-    margin-top: 136px;
-    align-self: start;
+    margin-top: 133px;
+    margin-left: 20px;
+    letter-spacing: 3.9px;
+    margin-bottom: 10px;
+  }
+
+  .land__text {
+    margin-top: 4px;
     text-align: left;
-    margin-left: 21px;
+    margin-left: 20px;
+    line-height: 1.2;
+    margin-bottom: 37px;
+  }
+
+  .land__btn {
+    width: auto;
+    margin-left: 20px;
+    padding-left: 30px;
+    padding-right: 32px;
+    justify-self: start;
+  }
+
+  .land__container picture {
+    position: absolute;
+    margin: 0;
+    top: 42px;
+
+    .land__img {
+      width: 100%;
+    }
+
+    &::after {
+      width: 547px;
+      height: 487px;
+      top: -66px;
+      left: -60px;
+    }
   }
 }
