@@ -1,9 +1,8 @@
 .banner {
   box-sizing: border-box;
   height: 100vh;
-  background-image: url("../images/banner_1-mob.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
+  position: relative;
 }
 
 .banner__container {
@@ -15,7 +14,17 @@
 }
 
 .banner__img {
-  display: none;
+  $height: 100vh;
+  $width: $height / 0.62;
+
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: $height;
+  max-width: $width;
+  filter: brightness(0.5);
+  z-index: -1;
 }
 
 .banner__text {
@@ -59,6 +68,7 @@
   border: none;
   color: $clr_main;
   padding: 0;
+  cursor: pointer;
 }
 
 .banner__pagination {
@@ -76,6 +86,21 @@
 
   .banner__container {
     padding-top: 325px;
+  }
+
+  .banner__img {
+    $height: 100vh;
+    $width: $height * 1.3;
+
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    height: $height;
+    max-width: $width;
+    width: $width;
+    z-index: -1;
+    filter: brightness(0.5);
   }
 
   .banner__btn {
@@ -146,9 +171,10 @@
   .banner__img {
     display: block;
     position: absolute;
-    bottom: -121px;
-    right: -285px;
+    top: 220px;
+    left: 610px;
     height: auto;
     width: 882px;
+    z-index: 1;
   }
 }

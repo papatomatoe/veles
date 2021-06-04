@@ -10,9 +10,14 @@
   margin-bottom: 26px;
 }
 
+.map__wrapper {
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+}
+
 .map__img {
   display: block;
-  margin: 0 auto;
 }
 
 @media (min-width: $tablet) {
@@ -34,6 +39,80 @@
     font-size: 30px;
     line-height: 1.2;
     margin-left: 5px;
+  }
+
+  .map__point {
+    display: block;
+    position: absolute;
+  }
+
+  .map__point:nth-of-type(1) {
+    width: 130px;
+    height: 70px;
+    top: 300px;
+    left: 142px;
+    cursor: pointer;
+  }
+
+  .map__point:nth-of-type(2) {
+    width: 90px;
+    height: 70px;
+    top: 430px;
+    left: 536px;
+    cursor: pointer;
+  }
+
+  .map__point:nth-of-type(3) {
+    width: 130px;
+    height: 110px;
+    top: 430px;
+    left: 696px;
+    cursor: pointer;
+  }
+
+  .map__point:nth-of-type(4) {
+    width: 130px;
+    height: 77px;
+    top: 273px;
+    left: 536px;
+    cursor: pointer;
+  }
+
+  .map__point:nth-of-type(5) {
+    width: 160px;
+    height: 87px;
+    top: 173px;
+    left: 636px;
+    cursor: pointer;
+  }
+
+  .map__desc {
+    position: absolute;
+    opacity: 0;
+    bottom: 80px;
+    width: 230px;
+    min-height: 50px;
+    background-color: #fff;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0 6px 6px -3px #757575;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+    pointer-events: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      border: 15px solid transparent;
+      border-top-color: #fff;
+      bottom: -30px;
+      left: 40px;
+    }
+  }
+
+  .map__point:hover > .map__desc {
+    opacity: 1;
   }
 
   .map__img {
