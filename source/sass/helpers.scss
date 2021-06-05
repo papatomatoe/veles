@@ -1,0 +1,29 @@
+.menu-hide {
+  display: none;
+}
+
+.modal-hide {
+  display: none;
+}
+
+.toggle {
+  background-color: transparent;
+
+  &::after {
+    transform: translate(0, -6px) rotate(45deg);
+  }
+
+  &::before {
+    transform: translate(0, 6px) rotate(-45deg);
+  }
+}
+
+.blocked {
+  overflow: hidden;
+}
+
+@media (min-width: $desktop) {
+  .menu-hide {
+    display: flex;
+  }
+}

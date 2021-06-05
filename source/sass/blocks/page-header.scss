@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   padding-top: 30px;
-  height: 100vh;
+  // height: 100vh;
 }
 
 .page-header__menu-open {
@@ -11,7 +11,7 @@
 }
 
 .page-header__nav {
-  position: fixed;
+  position: relative;
   width: 290px;
   display: flex;
   flex-wrap: wrap;
@@ -98,6 +98,7 @@
   }
 
   .page-header__nav {
+    position: relative;
     width: inherit;
     align-items: center;
     z-index: 10;

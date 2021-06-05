@@ -1,7 +1,7 @@
 .main-menu {
   @include no-list;
 
-  display: none;
+  display: block;
 }
 
 .main-menu--open {
